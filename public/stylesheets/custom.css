@@ -11720,6 +11720,7 @@ body {
 }
 
 #social-buttons-nav {
-  background-color: white;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
 }
 /*# sourceMappingURL=custom.css.map */
