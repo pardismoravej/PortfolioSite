@@ -9,6 +9,15 @@ app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// CONFIG
+// app.use(express.urlencoded({ extended: true }));
+// app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// MIDDLEWARE
+
+
+// ROUTES
 app.get('/', (req, res) => {
     res.render('home');
 })
@@ -21,6 +30,7 @@ app.get('/portfolio', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact');
 })
+
 
 
 const port = 3000;

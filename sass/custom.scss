@@ -1,0 +1,61 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: #a4bb79;
+$secondary: #cc513b;
+$success: #66b45c;
+$info: #1b3d45;
+$warning: #ecbd51;
+$danger: #f44336;
+$dark: #001a18;
+$cream: #ffffca;
+
+$body-bg: $info;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/media";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+
+// 5. Add additional custom code here
+body {
+	color: $light;
+}
+.card-body {
+	background-color: $primary;
+	color: $info;
+	i {
+		padding-right: 35px;
+		padding-top: 15px;
+	}
+	.card-title {
+		color: $dark;
+	}
+}
+.card {
+	border-color: $dark;
+	border-radius: 0;
+}
+#social-buttons-nav {
+	background-color: white;
+}
