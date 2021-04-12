@@ -21,10 +21,10 @@
                 Some of my other hobbies include yoga, running, reading (<em>Jane Eyre</em> is my favorite), and volunteering.
                 I'm very passionate about animals and the environment, so I try to be as involved in those communities as I can be!
             </p>
-            <div class="card text-center">
+            <div class="card text-center mb-5">
                 <div class="card-body">
-                    <h5 class="card-title">My ToolBox</h5>                    
-                    <i class="fab fa-js-square fa-5x"><a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Experience: 1yr"></a></i>
+                    <h5 class="card-title">My ToolBox</h5>                   
+                    <i class="fab fa-js-square fa-5x"></i>
                     <i class="fab fa-css3-alt fa-5x" data-bs-toggle="tooltip" data-bs-placement="top" title="Experience: 1yr"></i>
                     <i class="fab fa-html5 fa-5x" data-bs-toggle="tooltip" data-bs-placement="top" title="Experience: 1yr"></i>
                     <br>
@@ -40,6 +40,14 @@
     </div>
 </div>
 
+<script>
+    import 'bootstrap/js/dist/tooltip';
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    })
+</script>
 
-
-
+    
